@@ -2,11 +2,11 @@ variable "aws_access_key" {}
 variable "aws_secret_key" {}
 variable "name" { default = "dynamic-aws-creds-vault-admin" }
 
-terraform {
-  backend "local" {
-    path = "terraform.tfstate"
-  }
-}
+# terraform {
+#   backend "local" {
+#     path = "terraform.tfstate"
+#   }
+# }
 
 provider "vault" {}
 
